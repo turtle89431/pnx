@@ -17,3 +17,9 @@ To create a .node file from rust code
 ```bash
 npm run buildRustTest
 ```
+
+## To run app without rebuilding
+
+```bash
+node back.js
+```

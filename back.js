@@ -5,12 +5,13 @@ dotenv.config()
 import {hello} from"./rust/test/index.js"
 const app = express();
 
-// add a route that lives separately from the SvelteKit app
+// add a routes that lives separately from the SvelteKit app
 app.get('/hello', (req, res) => {
     res.end(hello());
 });
 
 // let SvelteKit handle everything else, including serving prerendered pages and static assets
+// app.use(handler); must be after all other routes and middlewares
 app.use(handler);
 
 app.listen(process.env.PRIVATE_port, () => {
