@@ -1,4 +1,11 @@
 
+## first time you have to run a `npm install` in each parent folder of the rust modules
+- example for the test module 
+```bash
+cd ./rust/test
+npm install
+cd ..
+```
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install`, start a development server:
