@@ -26,14 +26,11 @@ This command uses the [cargo-cp-artifact](https://github.com/neon-bindings/cargo
 
 ## Exploring test
 
-After building test, you can explore its exports at the Node REPL:
+After building test:
 
-```sh
-$ npm install
-$ node
-> require('.').hello()
-"hello node"
-```
+
+create a entry in index.js for each function you want accessable to express end of the app
+
 
 ## Available Scripts
 
